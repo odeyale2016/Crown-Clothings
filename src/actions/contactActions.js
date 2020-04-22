@@ -1,8 +1,15 @@
-import { GET_CONTACTS, DELETE_CONTACT, ADD_CONTACT } from './types'
+import { GET_CONTACTS, DELETE_CONTACT, ADD_CONTACT, GET_CONTACT } from './types'
  
 export const getContacts=()=>{
     return{
         type : GET_CONTACTS
+    }
+}
+
+export const getContact=(id)=>{
+    return{
+        type : GET_CONTACT,
+        payload: id
     }
 }
 
